@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         
           <div className="text-center sm:text-left">
-            <h1 className="text-lg font-bold">Morse</h1>
+            <h1 className="text-lg font-bold md:text-center">Morse</h1>
             <p className="text-sm">morsef2024@gmail.com</p>
             <p className="text-sm mt-2">Web designer and full-stack developer</p>
           </div>
@@ -24,7 +24,7 @@ export default function Footer() {
               <a href="" className="text-gray-400 hover:text-white">
                 <FaFacebook size={20} />
               </a>
-              <a href="https://morsef2024@gmail.com/" className="text-gray-400 hover:text-white">
+              <a href="mailto:morsef2024@gmail.com" className="text-gray-400 hover:text-white">
                 <FaEnvelope  size={20} />
               </a>
               <a href="https://github.com/Morse-Devs" className="text-gray-400 hover:text-white">

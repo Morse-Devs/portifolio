@@ -14,7 +14,7 @@ const SkillsAndAboutMe: React.FC = () => {
           </div>
           <div className="border border-gray-600 rounded-lg p-4">
             <h3 className="text-white font-semibold mb-4">Databases</h3>
-            <p>SQL</p>
+            <p>SQL, PostgreSQL, MongoDB</p>
           </div>
           <div className="border border-gray-600 rounded-lg p-4">
             <h3 className="text-white font-semibold mb-4">Tools</h3>

@@ -13,38 +13,40 @@ const HomePage: React.FC = () => {
   return (
     <div className="bg-gray-900 min-h-screen text-gray-400 flex flex-col md:flex-row">
  
-      <aside className="w-full md:w-16 bg-gray-800 flex md:flex-col items-center py-4 md:py-8 space-y-6 md:space-y-6">
-        <a
-          href="https://github.com/Morse-Devs"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-        >
-          <div className="w-6 h-6 text-gray-300 hover:text-white transition ">
-            <FaGithub />
-          </div>
-        </a>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <div className="w-6 h-6 text-gray-300 hover:text-white transition">
-            <FaLinkedin />
-          </div>
-        </a>
-        <a
-          href="https://morsef2024@gmail.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Gmail"
-        >
-          <div className="w-6 h-6 text-gray-300 hover:text-white transition">
-            <FaEnvelope />
-          </div>
-        </a>
-      </aside>
+        <aside className="w-full md:w-16 bg-gray-800 flex flex-row md:flex-col max-md:items-center max-md:justify-center py-4 md:py-8 md:pl-5 space-x-6 md:space-y-6 md:space-x-0 max-md:hidden">
+          <a
+            href="https://github.com/Morse-Devs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <div className="w-6 h-6 text-gray-300 hover:text-white transition">
+              <FaGithub />
+            </div>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <div className="w-6 h-6 text-gray-300 hover:text-white transition">
+              <FaLinkedin />
+            </div>
+          </a>
+          <a
+            href="mailto:morsef2024@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Gmail"
+          >
+            <div className="w-6 h-6 text-gray-300 hover:text-white transition">
+              <FaEnvelope />
+            </div>
+          </a>
+        </aside>
+
+            
 
     
       <main className="flex-1 flex flex-col px-6 md:px-10 py-8 space-y-10">

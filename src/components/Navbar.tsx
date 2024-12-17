@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -83,8 +84,42 @@ const Navbar: React.FC = () => {
           >
             #contacts
           </a>
+            <aside className="w-full md:w-16 bg-gray-800 flex flex-row md:flex-col items-center justify-center py-4 md:py-8 space-x-6 md:space-y-6 md:space-x-0">
+              <a
+                href="https://github.com/Morse-Devs"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <div className="w-6 h-6 text-gray-300 hover:text-white transition">
+                  <FaGithub />
+                </div>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <div className="w-6 h-6 text-gray-300 hover:text-white transition">
+                  <FaLinkedin />
+                </div>
+              </a>
+              <a
+                href="mailto:morsef2024@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Gmail"
+              >
+                <div className="w-6 h-6 text-gray-300 hover:text-white transition">
+                  <FaEnvelope />
+                </div>
+              </a>
+            </aside>
+
         </nav>
       )}
+
     </header>
   );
 };
