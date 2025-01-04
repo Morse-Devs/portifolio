@@ -10,7 +10,7 @@ const SkillsAndAboutMe: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="border border-gray-600 rounded-lg p-4">
             <h3 className="text-white font-semibold mb-4">Languages</h3>
-            <p>  Python e JavaScript</p>
+            <p>  Python, JavaScript e PHP</p>
           </div>
           <div className="border border-gray-600 rounded-lg p-4">
             <h3 className="text-white font-semibold mb-4">Databases</h3>
@@ -26,7 +26,7 @@ const SkillsAndAboutMe: React.FC = () => {
           </div>
           <div className="border border-gray-600 rounded-lg p-4">
             <h3 className="text-white font-semibold mb-4">Frameworks</h3>
-            <p>React, Next, React Native, Seleniu,. Web Scraping, Seaborn, Dash, Flask, FastAPI. Taliwind css, Axios</p>
+            <p>React, Next, React Native, Selenium, Web Scraping, Dash, Flask, FastAPI. Taliwind css, Axios, Django, Node</p>
           </div>
         </div>
       </section>
@@ -48,9 +48,16 @@ const SkillsAndAboutMe: React.FC = () => {
           </div>
 
    
-          <div className="mt-8 lg:mt-0">
+          <div className="mt-8 lg:mt-0 lg:hidden">
             <img
               src="./image.png"
+              alt="Profile Placeholder"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="mt-8 lg:mt-0 max-lg:hidden">
+            <img
+              src="./ft-tec.png"
               alt="Profile Placeholder"
               className="rounded-lg"
             />

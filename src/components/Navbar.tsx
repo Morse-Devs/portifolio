@@ -20,19 +20,14 @@ const Navbar: React.FC = () => {
           <span className="text-white font-bold text-lg">Morse</span>
         </div>
 
-    
         <nav className="hidden md:flex space-x-6 text-sm">
-          <a
-            
-            href="/"
-            className="text-purple-400 hover:text-purple-500 transition"
-          >
+          <a href="/" className="text-purple-400 hover:text-purple-500 transition">
             #home
           </a>
-          <a href="#works" className="hover:text-purple-400 transition" >
+          <a href="#works" className="hover:text-purple-400 transition">
             #Projectos
           </a>
-          <a href="#about-me" className="hover:text-purple-400 transition" >
+          <a href="#about-me" className="hover:text-purple-400 transition">
             #Sobre-nós
           </a>
           <a href="#contacts" className="hover:text-purple-400 transition" id="contacts">
@@ -41,85 +36,81 @@ const Navbar: React.FC = () => {
         </nav>
 
        
-        <div className="hidden md:block text-sm hover:text-purple-400 cursor-pointer">
-          Português
-        </div>
 
-      
         <div className="md:hidden text-gray-300 text-2xl cursor-pointer" onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
 
-      
-      {isMenuOpen && (
-        <nav className="fixed top-0 left-0 w-2/3 h-full bg-gray-900 text-gray-300 flex flex-col items-start justify-start space-y-8 p-6 z-50">
+  
+      <nav
+        className={`fixed top-0 left-0 w-2/3 h-full bg-gray-900 text-gray-300 flex flex-col items-start justify-start space-y-8 p-6 z-50 transform transition-transform duration-300 ${
+          isMenuOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <a
+          id="Home"
+          href="#home"
+          className="text-lg text-purple-400 hover:text-purple-500 transition"
+          onClick={toggleMenu}
+        >
+          #home
+        </a>
+        <a
+          id="Works"
+          href="#works"
+          className="text-lg hover:text-purple-400 transition"
+          onClick={toggleMenu}
+        >
+          #projects
+        </a>
+        <a
+          href="#about-me"
+          className="text-lg hover:text-purple-400 transition"
+          onClick={toggleMenu}
+        >
+          #about-us
+        </a>
+        <a
+          href="#contacts"
+          className="text-lg hover:text-purple-400 transition"
+          onClick={toggleMenu}
+        >
+          #contacts
+        </a>
+        <aside className="w-full md:w-16 bg-gray-800 flex flex-row md:flex-col items-center justify-center py-4 md:py-8 space-x-6 md:space-y-6 md:space-x-0">
           <a
-            id="Home"
-            href="#home"
-            className="text-lg text-purple-400 hover:text-purple-500 transition"
-            onClick={toggleMenu}
+            href="https://github.com/Morse-Devs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
           >
-            #home
+            <div className="w-6 h-6 text-gray-300 hover:text-white transition">
+              <FaGithub />
+            </div>
           </a>
           <a
-            id="Works"
-            href="#works"
-            className="text-lg hover:text-purple-400 transition"
-            onClick={toggleMenu}
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
-            #projects
+            <div className="w-6 h-6 text-gray-300 hover:text-white transition">
+              <FaLinkedin />
+            </div>
           </a>
           <a
-            href="#about-me"
-            className="text-lg hover:text-purple-400 transition"
-            onClick={toggleMenu}
+            href="mailto:morsef2024@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Gmail"
           >
-            #about-us
+            <div className="w-6 h-6 text-gray-300 hover:text-white transition">
+              <FaEnvelope />
+            </div>
           </a>
-          <a
-            href="#contacts"
-            className="text-lg hover:text-purple-400 transition"
-            onClick={toggleMenu}
-          >
-            #contacts
-          </a>
-            <aside className="w-full md:w-16 bg-gray-800 flex flex-row md:flex-col items-center justify-center py-4 md:py-8 space-x-6 md:space-y-6 md:space-x-0">
-              <a
-                href="https://github.com/Morse-Devs"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                <div className="w-6 h-6 text-gray-300 hover:text-white transition">
-                  <FaGithub />
-                </div>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                <div className="w-6 h-6 text-gray-300 hover:text-white transition">
-                  <FaLinkedin />
-                </div>
-              </a>
-              <a
-                href="mailto:morsef2024@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Gmail"
-              >
-                <div className="w-6 h-6 text-gray-300 hover:text-white transition">
-                  <FaEnvelope />
-                </div>
-              </a>
-            </aside>
-
-        </nav>
-      )}
-
+        </aside>
+      </nav>
     </header>
   );
 };
